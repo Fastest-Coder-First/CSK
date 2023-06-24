@@ -41,7 +41,7 @@ The project is developed from scratch by the team members and no code was copied
 
 | Name | Github Handle | Image |
 | --- | --- | --- |
-| Lokesh Kumar M | @LokeshKumar-Dev  | ![Loki](./media/loki.jpeg) |
+| Lokesh Kumar M | @LokeshKumar-Dev  | ![Loki](./media/loki.jpeg=300x200) |
 
 ## 🪙 Mongo Database Models
 
