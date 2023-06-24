@@ -12,6 +12,7 @@ For Full Experiance {DEMO}
 
 The project has been developed as a part of [Fastest Coder Hackathon](https://www.fastestcoderfirst.com/) project with extensive [usage of Github CoPilot](#github-copilot-usage). 
 
+![Dashboard Page](./media/dashboard.jpg)
 ## CoinStrike Development Journey with Copilot Usage
 
 Throughout the development of CoinStrike, we embarked on a unique and innovative path, making use of the powerful capabilities of GitHub Copilot. This cutting-edge AI-powered code generation tool revolutionized our development experience and opened up new possibilities. Here's an overview of how we harnessed Copilot's potential and the remarkable advantages it brought to our project:
