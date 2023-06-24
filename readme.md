@@ -4,9 +4,10 @@ The CoinStrike is a comprehensive personal finance tracker web application built
 
 With CoinStrike, users can create and manage their financial transactions, including expenses, income, and subscriptions. They can categorize transactions based on predefined categories such as groceries, transportation, dining, entertainment, and more. The application provides visualizations and charts to help users analyze their budget.
 
-use this credentials for demo:
-    - email: user@g.com
+# use this credentials for demo:
+    - email: dummy@g.com
     - password: 12121212
+For Full Experiance {DEMO}
 # 🪙 Development Details
 
 The project has been developed as a part of [Fastest Coder Hackathon](https://www.fastestcoderfirst.com/) project with extensive [usage of Github CoPilot](#github-copilot-usage). 
