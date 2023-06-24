@@ -1,0 +1,302 @@
+/* dashboard with 2 rows and 3 columns (2-1, 2-2, 2-3) and 1 row and 2 columns (1-1, 1-2) */
+.dashboard {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    /* grid-row-gap: 2rem; */
+    margin: 1rem;
+
+    overflow: hidden;
+}
+
+.dashboard>* {
+    flex: 1;
+}
+
+.dash--title {
+    font-size: .9rem;
+    /* font-weight: 600; */
+}
+
+.dashboard--1 {
+    flex: .6;
+    margin-bottom: 2rem;
+
+    display: flex;
+}
+
+.dashboard--1-1 {
+    flex: 1.5;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    justify-content: center;
+    /*see*/
+}
+
+.box {
+    width: 190px;
+    height: max-content;
+    padding: 0.7rem 1rem;
+    border: 1px solid #c4c4c45c;
+    border-radius: 4px;
+
+    position: relative;
+    overflow: hidden;
+    /* margin-right: 1rem; */
+}
+
+.box>* {
+    position: inherit;
+    z-index: 1;
+}
+
+.box--title {
+    font-size: .6rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    color: #4d4d4d;
+}
+
+.box--amount {
+    /* margin-bottom: 0.4rem; */
+}
+
+.box--stats {
+    color: #747474;
+}
+
+.dashboard--1-2 {
+    flex: 2;
+}
+
+.dashboard--2 {
+    display: flex;
+    /* height: 40%; */
+}
+
+/* .dashboard--2>* {
+    flex: 1;
+
+} */
+
+
+.dashboard--2-1 {
+    flex: 2;
+}
+
+.dashboard--2-1>.trans--entry {
+    margin: .7rem 0;
+}
+
+.dashboard--2-2 {
+    flex: 2;
+}
+
+.dashboard--2-2>.trans--entry {
+    width: 270px;
+}
+
+/* .dashboard--2-2>.trans--entry>.trans--entry-title {
+    margin-right: .5rem;
+} */
+
+.dashboard--2-3 {
+    flex: 2.5;
+    overflow: hidden;
+    height: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*add media query for dashboarf--2-1 at 1230px and below*/
+@media screen and (max-width: 1230px) {
+    .dashboard--2-1 {
+        flex: 1;
+    }
+
+    .dashboard--2-2 {
+        flex: 1;
+    }
+
+    .dashboard--2-3 {
+        flex: 1;
+    }
+}
+
+/* same at 1150px and below */
+@media screen and (max-width: 1150px) {
+    .dashboard--2-1>.trans--entry {
+        width: 90% !important;
+    }
+
+    .entry-small-title>h5 {
+        width: 80px;
+    }
+
+    .dashboard--2-2>.trans--entry {
+        width: 240px;
+    }
+
+    /* change width of box in dashboard--1-1 */
+    .box {
+        width: 150px;
+    }
+}
+
+/* for dashboard--2-2 at 1000px and below */
+@media screen and (max-width: 1000px) {
+    .dashboard {
+        margin: 0rem;
+    }
+
+    .dashboard--2-2 {
+        flex: 1;
+    }
+
+    .dashboard--2-2>.trans--entry {
+        width: 220px;
+    }
+
+    .dashboard--2-3 {
+        flex: 1
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .dashboard--2-2>.trans--entry {
+        width: 190px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    /*make dashboard grid into flex*/
+    .dashboard {
+        display: flex;
+        flex-direction: column;
+
+        overflow-y: scroll;
+        margin: 0 1rem;
+    }
+
+    /* dashboard--1 into column */
+    .dashboard--1 {
+        flex-direction: column;
+        margin-bottom: .2rem;
+    }
+
+    .dashboard--1>* {
+        height: 40%;
+        margin-bottom: 1rem;
+    }
+
+    /* box width */
+    .box {
+        width: 200px;
+        margin-bottom: 1rem;
+    }
+
+    /* dashboard--2 */
+    .dashboard--2 {
+        flex-direction: column;
+    }
+
+    .dashboard--2>* {
+        margin-bottom: 1.5rem;
+    }
+
+    /* dashboard--2-1 into column */
+    .dashboard--2-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dash--title {
+        align-self: baseline;
+    }
+
+    .dashboard--2-1>.trans--entry {
+        width: 70% !important;
+        margin: .4rem 0;
+        margin-right: 3rem;
+    }
+
+    /* dashboard--2-2 */
+    .dashboard--2-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dashboard--2-2>.trans--entry {
+        width: 70% !important;
+        margin-right: 3rem;
+    }
+
+    .dashboard--2-3 {
+        flex: 2.5;
+        overflow: unset;
+        height: max-content !important;
+        display: block !important;
+    }
+}
+
+/*media screen at 450px and below*/
+@media screen and (max-width: 450px) {
+    .content {
+        padding: 1rem 0;
+    }
+
+    .dashboard--1-1 {
+        height: max-content;
+    }
+
+    .dashboard--1-1>* {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ANIMATION BG dashboard  */
+
+.boxBg {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        clip-path: polygon(0% 45%,
+                16% 44%,
+                33% 50%,
+                54% 60%,
+                70% 61%,
+                84% 59%,
+                100% 52%,
+                100% 100%,
+                0% 100%);
+    }
+
+    50% {
+        clip-path: polygon(0% 60%,
+                15% 65%,
+                34% 66%,
+                51% 62%,
+                67% 50%,
+                84% 45%,
+                100% 46%,
+                100% 100%,
+                0% 100%);
+    }
+}

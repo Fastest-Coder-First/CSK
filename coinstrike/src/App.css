@@ -1,38 +1,192 @@
-.App {
-  text-align: center;
+#body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* full screen css for login page, signup page and forgot password page with d-full class */
+.d-full {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background: #f6f6f6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.user-form {
+    width: 30%;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+
+    font-weight: 500 !important;
+    border: 1px solid rgba(208, 208, 208, 0.344);
+    border-radius: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.fw-500 {
+    font-weight: 400 !important;
 }
 
-.App-link {
-  color: #61dafb;
+.user-form>* {
+    margin-bottom: .5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.login-form>* {
+    margin-bottom: .8rem;
+}
+
+.login-form>button {
+    align-self: flex-end;
+}
+
+.content {
+    /* height: 93vh; */
+    background-color: #fff;
+    margin: 0 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 1px solid rgba(208, 208, 208, 0.344);
+}
+
+.navbar {
+    /* height: 93vh; */
+    border-radius: 1rem;
+}
+
+.menu {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.menu--items {
+    width: 100%;
+    padding: .5rem .8rem;
+    margin-bottom: .5rem;
+
+    /* font-weight: 300; */
+    color: black;
+    font-size: .8rem;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.menu--items:hover {
+    color: black;
+}
+
+.active:hover {
+    color: #fff;
+}
+
+.menu--items-icon {
+    margin-right: 10px;
+}
+
+.active {
+    color: #fff;
+    font-weight: 500;
+    background-color: #0b1b34;
+}
+
+.ant-layout-sider-children {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.avatar {
+    align-self: center;
+    margin-bottom: 5px;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.avatar>h5 {
+    font-size: .7rem;
+    font-weight: 400;
+    text-align: center;
+    color: black;
+}
+
+.btn-round {
+    align-self: center;
+    width: 80%;
+    padding: .5rem .8rem;
+
+    font-weight: 500;
+    font-size: .8rem;
+    border-radius: 50px !important;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    color: #fff;
+    background-color: #0b1b34;
+    border: 0;
+}
+
+
+.btn {
+    cursor: pointer;
+    transition: .25s all;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 5px 14px 1px #44444443;
+}
+
+.btn-add {
+    width: max-content;
+    padding: .3rem .4rem;
+    font-size: .65rem;
+}
+
+.add-new-icon {
+    margin-right: 5px;
+}
+
+.btn-add:hover,
+.add-new-icon:hover {
+    transform: translateY(-1px) scale(1);
+    box-shadow: 0px 5px 14px 1px #44444420;
+}
+
+
+/* Utils css */
+.cur-p {
+    cursor: pointer !important;
+}
+
+.fl-1 {
+    flex: 1;
+}
+
+.fl-2 {
+    flex: 2;
 }
