@@ -52,34 +52,32 @@ The project is developed from scratch by the team members and no code was copied
 
 The application consists of the following entities:
 
-![data model](./media/data-model.png)
-
 1. Transaction:
-    ID: String or Number
-    Description: String
-    Amount: Number
-    Type: String (income or expense or subscription)
-    Category: String
-    Cycle: String (monthly, quarterly, or annual)
-    Status: Boolean
-    Auto: Boolean
-    Date: Date
+    - ID: String or Number
+    - Description: String
+    - Amount: Number
+    - Type: String (income or expense or subscription)
+    - Category: String
+    - Cycle: String (monthly, quarterly, or annual)
+    - Status: Boolean
+    - Auto: Boolean
+    - Date: Date
 
 2. User:
-    First Name: String
-    Last Name: String
-    Date of Birth: Date
-    Salary: Number
-    Email: String (required, unique)
-    Image: String
-    Password: String (required)
-    Currency: String (default: "INR")
-    Expense: Number (default: 0)
-    Expense List: Array (default: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
-    Income: Number (default: 0)
-    Income List: Array (default: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
-    OTP: String (default: "")
-    Is Verified: Boolean (default: false)
+    - First Name: String
+    - Last Name: String
+    - Date of Birth: Date
+    - Salary: Number
+    - Email: String (required, unique)
+    - Image: String
+    - Password: String (required)
+    - Currency: String (default: "INR")
+    - Expense: Number (default: 0)
+    - Expense List: Array (default: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+    - Income: Number (default: 0)
+    - Income List: Array (default: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+    - OTP: String (default: "")
+    - Is Verified: Boolean (default: false)
 
 ## 🪙 Installation and Usage
 
